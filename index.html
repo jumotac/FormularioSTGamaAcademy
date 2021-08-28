@@ -7,170 +7,168 @@
     <link rel="stylesheet" href="style.css">
     <title>JobsNet Formulario</title>
 </head>
-<body>
-    <header>
-        <div class="menu"> 
-            <img src="logo.png" class="logo-jobs" alt="Logo JobsNet">   
-            <nav>
+    <body>
+        <header>
+            <div class="menu-principal"> 
+                <div>
+                <img src="/img/logo.png" class="logo-jobs" alt="Logo JobsNet">   
+                </div>
+
                 <ul class="menu-pages">
-                    <li><a href="" > Quem Somos </a> </li>
-                    <li><a href="" > Qual é a sua paixão? </a> </li>
-                    <li><a href="" > Oportunidades </a> </li>
-                    <li><img src="instagram.png" class="logo-midia" alt="Logo Instagram"></li>
-                    <li><img src="linkedin.png" class="logo-midia" alt="Logo LinkedIn"></li>
-                    <li><img src="twitter.png" class="logo-midia" alt="Logo Twitter"></li>
+                    <li><a href="#" > Quem Somos </a> </li>
+                    <li><a href="#" > Qual é a sua paixão? </a> </li>
+                    <li><a href="#" > Oportunidades </a> </li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <!--<img class="banner" src="ambev-banner.png">-->
-        <div class="container-main">
-            <div class="container-texto">
-                <h1>Candidatos</h1>
-
-                <h2>#QueroUmJob</h2>
-
-                <p>Quer fazer parte do time Ambev Tech? Então se liga: eles estão buscando pessoas com perfis dinâmicos, que adoram desafios e estejam dispostas a fazer a diferença! </p>  
-                <p>Eles amam tecnologia e gostam de causar impacto através das entregas. Valorizam quem pega junto, faz acontecer e se abre para inovação.</p>    
+                <ul class="social-media">
+                    <li><img src="/img/instagram.png" class="logo-midia" alt="Logo Instagram"/>
+                        <a hre="#" class="link-instagram"></a></li>
+                    <li><img src="/img/linkedin.png" class="logo-midia" alt="Logo LinkedIn"/>
+                        <a hre="#" class="link-linkedin"></a></li>
+                    <li><img src="/img/twitter.png" class="logo-midia" alt="Logo Twitter">
+                        <a hre="#" class="link-twitter"></a></li>
+                </ul>
                 
-                <h2>Deu match? Então se increva e faça parte desse time!</h2>     
             </div>
+        </header>
 
-                <img class="icone-copo" src="casa-ambev.jpg">
+        <main>
+            <section class="container-main">
+                <div class="titulo">
+                    <h1>Candidatos</h1>
+                </div>
+
+                <div class="container-descricao">
+                    <div class="descricao">
+                        <h2>#QueroUmJob</h2>
+                        <p>Quer fazer parte de uma empresa que <strong>têm tudo a ver com você?</strong> </p>  
+                        <p><strong>Então se liga:</strong> a gente sugere oportunidades, empresas e conteúdos baseados nas sua personalidade.</p>
+                        <p><strong>Faça suas próprias escolhas.</strong> Seja corajoso. Seja curioso.</p>        
+                        <h2>Deu match? Então se increva e encontre o trabalho que foi feito para você!</h2>     
+                    </div>
+                        <img src="/img/wallpaper.jpg" class="figura-trabalho" width="20%">
+                </div>        
+            </section>
+
             
-        </div>  
+            <form>
+                <div class= "dados-pessoais">
+                    <h2>Dados Pessoais</h2>
 
-        <h2>Dados Pessoais</h2>
-        <form>
-            <div class= "nome-sobrenome">
-                <label for="nome-completo">Nome Completo:</label>
-                <input type="text" id="nome-completo" class="input-padrao" required>
-                <label for="cargo">Cargo Pretendido:</label>
-                <input type="text" id="cargo" class="input-padrao">
-            </div>
+                    <label for="nome-completo">Nome Completo:</label>
+                    <input type="text" id="nome-completo" class="input-padrao" required>
 
-            <label for="nascimento">Data de Nascimento:</label>
-                <input type="date" id="nascimento" class="input-padrao" required>
-          
-                 <!-- <legend> Data de Nascimento:</legend>
-                    <select> 
-                        <option>Janeiro</option>
-                        <option>Fevereiro</option>
-                        <option>Março</option>
-                        <option>Abril</option>
-                        <option>Maio</option>
-                        <option>Junho</option>
-                        <option>Julho</option>
-                        <option>Agosto</option>
-                        <option>Setembro</option>
-                        <option>Outubro</option>
-                        <option>Novembro</option>
-                        <option>Dezembro</option>
-                    </select>
+                    <label for="cpf">CPF </label>
+                    <input type="number" id="cpf"class="input-padrao" id="cpf_digitado" required>
+                            
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" class="input-padrao" required>
 
-                    <select> 
-                        <option>01</option>
-                        <option>02</option>
-                        <option>03</option>
-                        <option>04</option>
-                        <option>05</option>
-                        <option>06</option>
-                        <option>07</option>
-                        <option>08</option>
-                        <option>09</option>
-                        <option>10</option>
-                    </select>
-                    
-                    <select> 
-                        <option>2001</option>
-                        <option>2002</option>
-                        <option>2003</option>
-                        <option>2004</option>
-                        <option>2005</option>
-                        <option>2006</option>
-                        <option>2007</option>
-                        <option>2008</option>
-                        <option>2009</option>
-                        <option>2010</option>
-                    </select>-->
+                    <legend>Qual seu sexo biológico?</legend>
+                        <select> 
+                            <option></option>
+                            <option>Mulher cis</option>
+                            <option>Mulher trans</option>
+                            <option>Homem cis</option>    
+                            <option>Homem trans</option>
+                            <option>Prefiro não responder</option>
+                        </select>    
 
-                    <legend> Estado Civil:</legend>
+                    <legend> A JobsNet apoia a inclusão e diversidade, por isso queremos saber qual sua raça de acordo com o IBGE:</legend>
+                        <select> 
+                            <option></option>
+                            <option>Branca</option>
+                            <option>Preta</option>
+                            <option>Amarela</option>
+                            <option>Indígena</option>
+                            <option>Parda</option>
+                            <option>Prefiro não responder</option>
+                        </select>
+                </div> 
+
+                <div class= "dados-endereco">
+                    <h2>Endereço</h2> 
+
+                    <label for="cep"> CEP: </label>
+                    <input type="text" id="cep" class="input-padrao">
+
+                    <label for="endereço"> Rua: </label>
+                    <input type="text" id="endereço" class="input-padrao" placeholder="ex. Nome da Rua, 56 Bloco 2, AP 301" required>  
+                
+                    <label for="bairro"> Bairro: </label>
+                    <input type="text" id="bairro" class="input-padrao" required>  
+
+                    <label for="cidade"> Cidade: </label>
+                    <input type="text" id="cidade" class="input-padrao" required>
+                </div>
+
+                <div class= "dados-contato">
+                    <h2>Informações de Contato</h2>
+
+                    <label for="email"> E-mail </label>
+                    <input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required> 
+
+                    <label for="telefone">Celular: </label>
+                    <input type="tel" id="telefone"class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+                </div>
+            
+                <div class= "dados-formacao">
+                    <h2>Formação</h2>
+
+                    <label for="cargo">Instituição de Ensino:</label>
+                    <input type="text" id="cargo" class="input-padrao">
+
+                    <label for="cargo">Curso:</label>
+                    <input type="text" id="cargo" class="input-padrao">
+
+                    <label for="cargo">Mes e Ano de Formaçao:</label>
+                    <input type="text" id="cargo" class="input-padrao">
+                </div>
+
+                <div class= "dados-idioma">
+                    <h2>Idiomas</h2>    
+
+                    <legend> Nível de Inglês:</legend>
                     <select> 
                         <option></option>
-                        <option>Solteiro</option>
-                        <option>Casado</option>
-                        <option>Divorciado</option>
-                        <option>Viúvo</option>
-                    </select>
+                        <option>Básico</option>
+                        <option>Intermediário</option>
+                        <option>Avançado</option>    
+                        <option>Fluente</option>
+                    </select> 
 
-                    <legend> Sexo:</legend>
-                    <select> 
-                        <option></option>
-                        <option>Mulher cis</option>
-                        <option>Mulher trans</option>
-                        <option>Homem cis</option>    
-                        <option>Homem trans</option>
-                        <option>Prefiro náo informar</option>
-                    </select>    
+                <div class= "dados-objetivo">
+                    <h2>Objetivo</h2>
 
-            <label for="endereço"> Endereço: </label>
-            <input type="text" id="endereço" class="input-padrao" placeholder="ex. Nome da Rua, 56 Bloco 2, AP 301" required>  
-            
-            <label for="bairro"> Bairro: </label>
-            <input type="text" id="bairro" class="input-padrao" required>  
+                    <label for="cargo">Cargo Pretendido:</label>
+                    <input type="text" id="cargo" class="input-padrao">
+        
+                    <div class= "dados-pcd">
+                        <h2>Deficiência</h2>       
 
-            <label for="cidade"> Cidade: </label>
-            <input type="text" id="cidade" class="input-padrao" required>
-            
-            <label for="cep"> CEP: </label>
-            <input type="text" id="cep" class="input-padrao">
+                        <legend> Para melhor atendê-lo, precisamos saber se você possui alguma deficiência: </legend>
+                        <select required> 
+                            <option></option>
+                            <option>Sim</option>
+                            <option>Não</option>       
+                        </select>  
 
-            <label for="telefone">Telefone Fixo 1:</label>
-            <input type="tel" id="telefone"class="input-padrao" placeholder="(XX) XXXX-XXXX">
+                        <legend> Se você respondeu sim, qual deficiência?</legend>
+                        <select> 
+                            <option></option>
+                            <option>Visual</option>
+                            <option>Auditiva</option>
+                            <option>Física</option>    
+                            <option>Intelectual</option>
+                            <option>Multipla</option>
+                        </select>  
+                    </div>
 
-            <label for="telefone">Telefone Fixo 2:</label>
-            <input type="tel" id="telefone"class="input-padrao" placeholder="(XX) XXXX-XXXX">
+                <button type="submit" value="Cadastrar" class="cadastro" onclick="">Cadastrar</button>
+            </form>
+        </main>
 
-            <label for="telefone">Celular: </label>
-            <input type="tel" id="telefone"class="input-padrao" placeholder="(XX) XXXXX-XXXX">
-
-            <label for="contato">Contato</label>
-            <input type="text" id="contato"class="input-padrao">
-
-            <label for="email"> E-mail </label>
-            <input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required> 
-            
-            <h2>Documentos</h2>
-            <label for="identidade">Identidade </label>
-            <input type="number" id="identidade"class="input-padrao" required>
-            
-            <label for="cpf">CPF </label>
-            <input type="number" id="cpf"class="input-padrao" required>
-
-            <legend>Possui Veiculo</legend>
-                <select> 
-                    <option></option>
-                    <option>Sim</option>
-                    <option>Não</option>
-                    </select>
-
-            <legend>Possui Veiculo</legend>
-                <select> 
-                    <option></option>
-                    <option>A</option>
-                    <option>B</option>
-                    <option>C</option>
-                    <option>D</option>
-                </select>        
-
-
-            <input type="submit" value="Enviar Formulário" class="enviar">
-        </form>
-
-        <footer>
-            <img src="" alt="">
+        <footer class="rodape">
+            <img src="/img/logo-preto.jpg" alt="Logo da JobsNet">
             <p class="copyright">&copy; Copyright JobsNet - 2021</p>
         </footer>
     </body>
