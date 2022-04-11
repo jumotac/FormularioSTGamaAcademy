@@ -48,7 +48,123 @@
                         <img src="/img/wallpaper.jpg" class="figura-trabalho" width="20%">
                 </div>        
             </section>
-                <button type="submit" value="Cadastrar" class="cadastro" onclick="">Cadastre-se Agora</button>
+
+            
+            <form>
+                <div class= "dados-pessoais">
+                    <h2>Dados Pessoais</h2>
+
+                    <label for="nome-completo">Nome Completo:</label>
+                    <input type="text" id="nome-completo" class="input-padrao" required>
+
+                    <label for="cpf">CPF </label>
+                    <input type="number" id="cpf"class="input-padrao" id="cpf_digitado" required>
+                            
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" class="input-padrao" required>
+
+                    <legend>Qual seu sexo biológico?</legend>
+                        <select> 
+                            <option></option>
+                            <option>Mulher cis</option>
+                            <option>Mulher trans</option>
+                            <option>Homem cis</option>    
+                            <option>Homem trans</option>
+                            <option>Prefiro não responder</option>
+                        </select>    
+
+                    <legend> A JobsNet apoia a inclusão e diversidade, por isso queremos saber qual sua raça de acordo com o IBGE:</legend>
+                        <select> 
+                            <option></option>
+                            <option>Branca</option>
+                            <option>Preta</option>
+                            <option>Amarela</option>
+                            <option>Indígena</option>
+                            <option>Parda</option>
+                            <option>Prefiro não responder</option>
+                        </select>
+                </div> 
+
+                <div class= "dados-endereco">
+                    <h2>Endereço</h2> 
+
+                    <label for="cep"> CEP: </label>
+                    <input type="text" id="cep" class="input-padrao">
+
+                    <label for="endereço"> Rua: </label>
+                    <input type="text" id="endereço" class="input-padrao" placeholder="ex. Nome da Rua, 56 Bloco 2, AP 301" required>  
+                
+                    <label for="bairro"> Bairro: </label>
+                    <input type="text" id="bairro" class="input-padrao" required>  
+
+                    <label for="cidade"> Cidade: </label>
+                    <input type="text" id="cidade" class="input-padrao" required>
+                </div>
+
+                <div class= "dados-contato">
+                    <h2>Informações de Contato</h2>
+
+                    <label for="email"> E-mail </label>
+                    <input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required> 
+
+                    <label for="telefone">Celular: </label>
+                    <input type="tel" id="telefone"class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+                </div>
+            
+                <div class= "dados-formacao">
+                    <h2>Formação</h2>
+
+                    <label for="cargo">Instituição de Ensino:</label>
+                    <input type="text" id="cargo" class="input-padrao">
+
+                    <label for="cargo">Curso:</label>
+                    <input type="text" id="cargo" class="input-padrao">
+
+                    <label for="cargo">Mes e Ano de Formaçao:</label>
+                    <input type="text" id="cargo" class="input-padrao">
+                </div>
+
+                <div class= "dados-idioma">
+                    <h2>Idiomas</h2>    
+
+                    <legend> Nível de Inglês:</legend>
+                    <select> 
+                        <option></option>
+                        <option>Básico</option>
+                        <option>Intermediário</option>
+                        <option>Avançado</option>    
+                        <option>Fluente</option>
+                    </select> 
+
+                <div class= "dados-objetivo">
+                    <h2>Objetivo</h2>
+
+                    <label for="cargo">Cargo Pretendido:</label>
+                    <input type="text" id="cargo" class="input-padrao">
+        
+                    <div class= "dados-pcd">
+                        <h2>Deficiência</h2>       
+
+                        <legend> Para melhor atendê-lo, precisamos saber se você possui alguma deficiência: </legend>
+                        <select required> 
+                            <option></option>
+                            <option>Sim</option>
+                            <option>Não</option>       
+                        </select>  
+
+                        <legend> Se você respondeu sim, qual deficiência?</legend>
+                        <select> 
+                            <option></option>
+                            <option>Visual</option>
+                            <option>Auditiva</option>
+                            <option>Física</option>    
+                            <option>Intelectual</option>
+                            <option>Multipla</option>
+                        </select>  
+                    </div>
+
+                <button type="submit" value="Cadastrar" class="cadastro" onclick="">Cadastrar</button>
+            </form>
         </main>
 
         <footer class="rodape">
